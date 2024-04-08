@@ -21,7 +21,7 @@ function Todocontainer() {
 
       <div className="flex gap-5 m-5 flex-wrap">
         {/* <div className="flex flex-col gap-3"> */}
-        <Addtodoform />
+        <Addtodoform  Activityarr={Activityarr}setactivity={setactivity}/>
         <Todolist Activityarr={Activityarr}setactivity={setactivity}/>
       </div>
 
