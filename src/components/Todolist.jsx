@@ -1,19 +1,8 @@
-import { useState } from "react"
 import Todoitem from "./Todoitem"
 
- function Todolist() {
-  const [Activityarr, setactivity] = useState([
-
-    { id: 1, 
-      activity: "Go for a walk" }
-    ,
-     { id: 1,
-       activity: "Go to office" }
-    , 
-    { id: 1,
-       activity: "Go to office" }
-
-  ])
+ function Todolist(props) {
+  const Activityarr = props.Activityarr
+  const setactivity = props.setactivity
 
   return (
     <div className="bg-[#BDB4EA] border rounded-md p-2 flex-grow">
@@ -22,7 +11,7 @@ import Todoitem from "./Todoitem"
 
       {
         Activityarr.map(function (item, index) {
-          return <Todoitem id={item.id} activity={item.activity}
+          return <Todoitem id={item.id} activity={item.activity} key={index}
             index={index} Activityarr={Activityarr} setactivity={setactivity} />
         })
       }
