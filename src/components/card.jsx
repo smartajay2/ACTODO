@@ -1,4 +1,4 @@
-export default function Card(props)
+ function Card(props)
 {
   return(
     <div style={{ backgroundColor:props.bgcolor }} className="px-10 py-5 border rounded-md text-center flex-grow">
@@ -7,3 +7,4 @@ export default function Card(props)
   </div>
   )
 }
+export default Card;
