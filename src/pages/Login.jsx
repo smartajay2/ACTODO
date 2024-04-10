@@ -28,7 +28,7 @@ function Login(props) {
       if (item.username === eusername && item.password === epassword) {
         console.log("login successsful")
         userfound = true
-        navigate('/Landing',{state:{user:eusername}})
+        navigate('/Landing', { state: { user: eusername } })
 
       }
 

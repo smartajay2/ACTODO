@@ -12,8 +12,8 @@ function Addtodoform(props) {
     setnewactivity(evt.target.value)
   }
   function addactivity() {
-  setactivity([... Activityarr,{id: Activityarr.length+1,activity:newactivity}])
-  setnewactivity([])
+    setactivity([...Activityarr, { id: Activityarr.length + 1, activity: newactivity }])
+    setnewactivity([])
   }
   return (
 
