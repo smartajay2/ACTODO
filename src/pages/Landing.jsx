@@ -1,5 +1,5 @@
 import Header from "../components/Header.jsx";
-import Colorcrd from "../carddetails/Colorcrd.jsx";
+import Colorcrd from "../components/Colorcrd.jsx";
 import Todocontainer from "../components/TodoContainer.jsx";
 import { useLocation } from "react-router-dom"
 
