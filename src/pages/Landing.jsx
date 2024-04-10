@@ -1,5 +1,5 @@
 import Header from "../components/Header.jsx";
-import Card from "../components/Card.jsx";
+import Colorcrd from "../carddetails/Colorcrd.jsx";
 import Todocontainer from "../components/TodoContainer.jsx";
 import { useLocation } from "react-router-dom"
 
@@ -14,9 +14,9 @@ function Landing() {
         <Header username={data.state.user} />
         {/* card */}
         <div className="flex justify-between gap-7 flex-wrap">
-          <Card bgcolor={"#8272DA"} title={"23"} subtitle={"chennai"} />
-          <Card bgcolor={"#FD6663"} title={"April 05"} subtitle={"14:23:08"} />
-          <Card bgcolor={"#FCA201"} title={"Built Using"} subtitle={"React"} />
+          <Colorcrd bgcolor={"#8272DA"} title={"23"} subtitle={"chennai"} />
+          <Colorcrd bgcolor={"#FD6663"} title={"April 05"} subtitle={"14:23:08"} />
+          <Colorcrd bgcolor={"#FCA201"} title={"Built Using"} subtitle={"React"} />
 
 
         </div>
